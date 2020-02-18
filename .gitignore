@@ -1,0 +1,44 @@
+# Gradle
+.gradle
+build/
+
+# Android built artifacts
+*.apk
+*.ap_
+*.dex
+
+# Java build artifacts class files
+*.class
+
+# other generated files
+gen/
+target/
+
+# local configuration file (for Android sdk path, etc)
+local.properties
+
+# OSX files
+.DS_Store
+
+# Eclipse
+/.classpath
+/.settings/
+/.project
+/.metadata
+bin/
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+*.uml
+.idea/workspace.xml
+out/
+
+# NDK
+obj/
+
+# Misc
+*.log
+*.graphml
+coverage.db*

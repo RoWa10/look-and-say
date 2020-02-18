@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+wrapper {
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+allprojects {
+
+    apply plugin: 'java'
+    defaultTasks 'clean', 'compile'
+    
+    repositories {
+        mavenCentral()
+    }
+    
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+        testImplementation 'org.junit.jupiter:junit-jupiter-params:5.6.0'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.0'
+    }
+    
+    compileJava {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    
+    test {
+        useJUnitPlatform()
+    }
+}
+
