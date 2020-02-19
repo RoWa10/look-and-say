@@ -8,7 +8,7 @@ import java.math.*;
  **/
 class Solution {
 	
-	public static void main( String args[] ) {
+	public static void main( String[] args ) {
 		Scanner in = new Scanner( System.in );
 		// read values with in.next...() methods
 		
