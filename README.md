@@ -1,22 +1,22 @@
-#Run-Length-Encoding
+# Run-Length-Encoding
 
-##Goal
+## Goal
 Starting with a digit, count how often this digit occurs in succession.
 Then repeat the same procedure for given number of `iterations`.
 In human terms this is like speaking out loud how often each digit appears consecutively.
 
-###Input
+### Input
 `iterations` - a numeric value how often the process is repeated
 
-###Output
+### Output
 A numeric value representing a stream of occurrences and digits.
 
-###Constraints
+### Constraints
 1 <= `iterations` <= 10  
-**Start value** = 0
+**Start value** = 1
 
-###Examples
-Assuming the start value is `1` and `iteration` is 5:  
+### Examples
+Assuming the start value is `0` (**attention:** value differs from real start value for demostraton purposes) and `iteration` is 5:  
 0\. iteration: `0` (reading: *one 1*)  
 1\. iteration: `10` (reading: *two 1s*)  
 2\. iteration: `1110` (reading: *one 2 and one 1*)  
