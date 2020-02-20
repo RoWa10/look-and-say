@@ -2,7 +2,7 @@
 
 ##Goal
 Starting with a digit, count how often this digit occurs in succession.
-Then repeat the the procedure for given number of `iterations`.
+Then repeat the same procedure for given number of `iterations`.
 In human terms this is like speaking out loud how often each digit appears consecutively.
 
 ###Input
