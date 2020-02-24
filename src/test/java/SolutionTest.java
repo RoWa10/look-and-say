@@ -52,7 +52,7 @@ class SolutionTest {
 			
 			System.out.println( String.format( "Solution took %01d.%03d secs",  duration / 1000,  duration % 1000 ));
 			
-			try (BufferedReader chk = new BufferedReader( new InputStreamReader( new ByteArrayInputStream( bos.toByteArray() )))) {
+			try (BufferedReader chk = new BufferedReader( new InputStreamReader( new ByteArrayInputStream( bos.toByteArray() ), UTF_8 ))) {
 				String[] expectedLines = expected.split( "\\s*[|]\\s*" );
 				
 				int lineCount = 0;
