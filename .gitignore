@@ -32,6 +32,7 @@ bin/
 *.ipr
 *.iws
 *.uml
+.idea/compiler.xml
 .idea/workspace.xml
 out/
 
