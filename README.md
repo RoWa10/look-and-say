@@ -1,4 +1,4 @@
-# Run-Length-Encoding
+# Look-and-Say
 
 ## Goal
 Starting with a digit, count how often this digit occurs in succession.
