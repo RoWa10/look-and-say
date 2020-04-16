@@ -2,10 +2,6 @@ import java.util.*;
 import java.io.*;
 import java.math.*;
 
-/**
- * Template code to help you parse the standard input 
- * according to the problem statement.
- **/
 class Solution {
 	
 	public static void main( String[] args ) {

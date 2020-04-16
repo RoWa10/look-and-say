@@ -1,25 +1,31 @@
 # Look-and-Say
 
 ## Goal
-Starting with a digit, count how often this digit occurs in succession.
-Then repeat the same procedure for given number of `iterations`.
+Given an `iteration-count` generate and output the `look-and-say` sequence.
+
+The sequence starts with `1`. Subsequent numbers are derived by describing the previous number in terms of consecutive digits.
+
+To generate an entry of the sequence, examine the previous entry.
+
+Read off the digits of the previous entry, counting the number of digits in groups of the same digit.
+
 In human terms this is like speaking out loud how often each digit appears consecutively.
+
+**Keep in mind:** the output becomes very long very quickly.
 
 ### Input
 `iterations` - a numeric value how often the process is repeated
 
 ### Output
-A numeric value representing a stream of occurrences and digits.
+The head of the generated sequence after iterating by the given input.
 
 ### Constraints
-1 <= `iterations` <= 10  
-**Start value** = 1
+ * 0 <= `iterations` <= 28
+ * **Start value** = 1
 
 ### Examples
-Assuming the start value is `0` (**attention:** value differs from real start value for demostraton purposes) and `iteration` is 5:  
-0\. iteration: `0` (reading: *one 1*)  
-1\. iteration: `10` (reading: *two 1s*)  
-2\. iteration: `1110` (reading: *one 2 and one 1*)  
-3\. iteration: `3110` (reading: *one 1 and one two and two 1s*)  
-4\. iteration: `132110` (reading: *three 1s and two 2s and one 1*)  
-5\. iteration: `1113122110`  
+* for input `0` iterations, output `1`, i.e. the starting value)
+* for input `1` iterations, output `11`, i.e. reading the previous entry `1` as `one 1`
+* for input `2` iterations, output `21`, i.e. reading the previous entry `11` as `two 1s`
+* for input `3` iterations, output `1211`, i.e. reading the previous entry `21` as `one 2 one 1`
+* for input `4` iterations, output `111221`, i.e. reading the previous entry `1211` as `one 1 one 2 two 1`
